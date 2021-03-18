@@ -1,0 +1,5 @@
+
+echo "Try to warmup some tables"
+
+set -e
+source ${PG_APP_HOME}/env-defaults

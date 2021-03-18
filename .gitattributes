@@ -1,0 +1,7 @@
+image/ubuntu/18.04/entrypoint.sh text eol=lf
+
+image/ubuntu/18.04/runtime/functions text eol=lf
+image/ubuntu/18.04/runtime/warmup text eol=lf
+image/ubuntu/18.04/runtime/env-defaults text eol=lf
+
+image/ubuntu/18.04/tools/* text eol=lf

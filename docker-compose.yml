@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  pghero:
+    build:
+      context: ./tools/pghero
+    image: silverbulleters/pghero:latest
+    environment:
+      ENVIRON: prod
+    env_file:
+      .env
+    ports: 
+     - 10080:8080
+  powa:
+    build:
+      context: ./tools/powa
+    image: silverbulleters/powa-web:latest
+    ports: 
+     - 10088:8888
+  sqlpad:
+    image: sqlpad/sqlpad:latest
+    ports: 
+     - 10030:3000
